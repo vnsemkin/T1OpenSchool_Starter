@@ -25,9 +25,9 @@ dependencies {
     annotationProcessor platform("org.springframework.boot:spring-boot-dependencies:3.4.3")
 
     // Для автоконфигурации и аспекта
-    implementation 'org.springframework.boot:spring-boot-autoconfigure'
     implementation 'org.springframework.boot:spring-boot-starter-aop'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
 
     // Чтобы генерировать метаданные конфигурации
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
