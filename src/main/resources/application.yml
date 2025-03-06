@@ -1,1 +1,8 @@
-spring.application.name: T1OpenSchool_Starter
+# Spring Boot application properties
+spring.application.name: T1OpenSchool-Starter
+
+# Logging
+logging:
+  http:
+    enabled: true
+    level: INFO
